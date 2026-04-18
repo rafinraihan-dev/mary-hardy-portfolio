@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Hardy | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Tailwind v4 built CSS -->
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="font-open-sans bg-light-bg text-[#474747] overflow-x-hidden">
+
+    <!-- ═══════════════════════════════════
+         HEADER / NAV
+    ════════════════════════════════════ -->
+    <header class="bg-light-bg pb-12">
+
+        <nav class="max-w-[1140px] mx-auto flex justify-between items-center px-6 py-6">
+
+            <!-- Logo -->
+            <div class="text-3xl md:text-4xl font-extrabold text-black tracking-tight">
+                Ma<span class="text-primary">r</span>y
+            </div>
+
+            <!-- Desktop nav -->
+            <ul class="hidden md:flex items-center gap-8 lg:gap-12 list-none">
+                <li><a href="#about"   class="text-base font-semibold text-[#474747] hover:text-primary transition-colors duration-200">About</a></li>
+                <li><a href="#skills"  class="text-base font-semibold text-[#474747] hover:text-primary transition-colors duration-200">Skills</a></li>
+                <li><a href="#resume"  class="text-base font-semibold text-[#474747] hover:text-primary transition-colors duration-200">Resume</a></li>
+                <li><a href="#contact" class="text-base font-semibold text-[#474747] hover:text-primary transition-colors duration-200">Contact</a></li>
+                <li>
+                    <button class="bg-hire-btn hover:bg-hire-btn-hover text-white px-7 py-3 rounded-lg font-bold text-base cursor-pointer transition-all duration-200 hover:-translate-y-[1px]">
+                        Hire me
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Mobile hamburger -->
+            <button class="md:hidden flex flex-col gap-[5px] p-2">
+                <span class="block w-6 h-[2px] bg-primary"></span>
+                <span class="block w-6 h-[2px] bg-primary"></span>
+                <span class="block w-6 h-[2px] bg-primary"></span>
+            </button>
+
+        </nav>
+
+        <!-- ── HERO ── -->
+        <section id="banner" class="max-w-[1140px] mx-auto px-6 pt-6 pb-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+
+            <!-- Left: text -->
+            <div class="text-center lg:text-left order-2 lg:order-1">
+                <p class="text-xs font-bold tracking-[0.18em] uppercase text-primary mb-3">
+                    ✦ Available for work
+                </p>
+                <h2 class="text-2xl md:text-3xl font-semibold text-[#474747] mb-1">Hi, I am</h2>
+                <h1 class="text-5xl md:text-7xl xl:text-8xl font-extrabold text-black tracking-tight leading-none mb-5">
+                    MARY<br><span class="text-primary">HARDY</span>
+                </h1>
+                <p class="text-lg text-[#757575] leading-relaxed max-w-md mx-auto lg:mx-0 mb-8">
+                    Designer &amp; developer with 10+ years crafting clean, high-performance web experiences that users love.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                    <button class="bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 hover:-translate-y-[1px]">
+                        <i class="fa-solid fa-download"></i> Download CV
+                    </button>
+                    <button class="border-2 border-primary text-primary hover:bg-primary hover:text-white bg-transparent px-8 py-4 rounded-lg font-bold text-lg flex items-center justify-center gap-2 cursor-pointer transition-all duration-200 hover:-translate-y-[1px]">
+                        <i class="fa-solid fa-phone"></i> Contact
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right: image -->
+            <div class="flex justify-center relative order-1 lg:order-2">
+                
+                <div class="w-[280px] h-[280px] md:w-[420px] md:h-[420px] rounded-full bg-[#EDE9FE] overflow-hidden">
+                <img src="images/hardy.png" alt="Mary Hardy" class="w-full h-full object-cover object-top">
+                </div>
+                <!-- Floating badges -->
+                <div class="absolute top-4 right-4 md:right-0 bg-white border border-[#DDD6FE] rounded-xl px-4 py-2 text-xs font-bold text-primary shadow-md">
+                    ⚡ 10+ years exp.
+                </div>
+                <div class="absolute bottom-8 left-4 md:left-0 bg-white border border-[#DDD6FE] rounded-xl px-4 py-2 text-xs font-bold text-primary shadow-md">
+                    ✓ Open to offers
+                </div>
+            </div>
+
+        </section>
+    </header>
+
+
+    <!-- ═══════════════════════════════════
+         ABOUT
+    ════════════════════════════════════ -->
+    <section id="about" class="py-24 px-6 bg-white">
+        <div class="max-w-[1140px] mx-auto">
+
+            <!-- Section heading -->
+            <div class="text-center mb-10">
+                <span class="inline-block text-xs font-bold tracking-[0.18em] uppercase text-primary bg-[#EDE9FE] px-4 py-1 rounded-full mb-3">
+                    About me
+                </span>
+                <h2 class="text-4xl font-extrabold text-black tracking-tight">The person behind the code</h2>
+            </div>
+
+            <!-- Card -->
+            <div class="bg-light-bg border border-[#DDD6FE] rounded-2xl p-10 md:p-14">
+                <p class="text-lg text-[#757575] max-w-2xl mx-auto text-center leading-relaxed mb-10">
+                    I'm a designer &amp; developer with a passion for web design. I enjoy developing simple, clean and slick websites that provide real value to the end user. Thousands of clients have procured exceptional results while working with me.
+                </p>
+
+                <!-- 4 equal info cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+                    <div class="bg-white border border-[#DDD6FE] rounded-2xl p-5 text-center min-w-0">
+                        <p class="text-[0.7rem] font-bold uppercase tracking-widest text-[#9B8EC4] mb-2">Name</p>
+                        <h4 class="text-base font-bold text-black break-words">Mary Hardy</h4>
+                    </div>
+
+                    <div class="bg-white border border-[#DDD6FE] rounded-2xl p-5 text-center min-w-0">
+                        <p class="text-[0.7rem] font-bold uppercase tracking-widest text-[#9B8EC4] mb-2">Email</p>
+                        <h4 class="text-base font-bold text-black break-all">info@gmail.com</h4>
+                    </div>
+
+                    <div class="bg-white border border-[#DDD6FE] rounded-2xl p-5 text-center min-w-0">
+                        <p class="text-[0.7rem] font-bold uppercase tracking-widest text-[#9B8EC4] mb-2">Born</p>
+                        <h4 class="text-base font-bold text-black break-words">11 Nov 1987</h4>
+                    </div>
+
+                    <div class="bg-white border border-[#DDD6FE] rounded-2xl p-5 text-center min-w-0">
+                        <p class="text-[0.7rem] font-bold uppercase tracking-widest text-[#9B8EC4] mb-2">Based in</p>
+                        <h4 class="text-base font-bold text-black break-words">Los Angeles</h4>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════
+         SKILLS
+    ════════════════════════════════════ -->
+    <section id="skills" class="py-20 px-6 bg-light-bg">
+        <div class="max-w-[1140px] mx-auto text-center">
+
+            <span class="inline-block text-xs font-bold tracking-[0.18em] uppercase text-primary bg-[#EDE9FE] px-4 py-1 rounded-full mb-3">
+                What I do
+            </span>
+            <h2 class="text-4xl font-extrabold text-black tracking-tight mb-3">My tech stack</h2>
+            <p class="text-[#757575] max-w-md mx-auto text-lg leading-relaxed">
+                I have more than 10 years experience building software for clients all over the world.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+
+                <div class="bg-white border border-[#EDE9FE] rounded-2xl p-8 text-left hover:shadow-[0_8px_32px_rgba(124,58,237,0.12)] hover:-translate-y-1 hover:border-primary transition-all duration-300 cursor-default">
+                    <img src="images/icons/js.png" class="w-12 mb-5" alt="JS">
+                    <h3 class="text-lg font-bold text-[#181818] mb-2">Vanilla JavaScript</h3>
+                    <p class="text-[#757575] leading-relaxed text-sm">Core expertise in ES6+, async patterns, DOM manipulation and performance optimization.</p>
+                </div>
+
+                <div class="bg-white border border-[#EDE9FE] rounded-2xl p-8 text-left hover:shadow-[0_8px_32px_rgba(124,58,237,0.12)] hover:-translate-y-1 hover:border-primary transition-all duration-300 cursor-default">
+                    <img src="images/icons/react.png" class="w-12 mb-5" alt="React">
+                    <h3 class="text-lg font-bold text-[#181818] mb-2">React</h3>
+                    <p class="text-[#757575] leading-relaxed text-sm">Scalable component architectures, hooks-based state management and SSR applications.</p>
+                </div>
+
+                <div class="bg-white border border-[#EDE9FE] rounded-2xl p-8 text-left hover:shadow-[0_8px_32px_rgba(124,58,237,0.12)] hover:-translate-y-1 hover:border-primary transition-all duration-300 cursor-default">
+                    <img src="images/icons/nodejs.png" class="w-12 mb-5" alt="Node">
+                    <h3 class="text-lg font-bold text-[#181818] mb-2">Node.js</h3>
+                    <p class="text-[#757575] leading-relaxed text-sm">REST APIs, microservices, real-time apps with WebSockets and cloud deployments.</p>
+                </div>
+
+                <div class="bg-white border border-[#EDE9FE] rounded-2xl p-8 text-left hover:shadow-[0_8px_32px_rgba(124,58,237,0.12)] hover:-translate-y-1 hover:border-primary transition-all duration-300 cursor-default">
+                    <img src="images/icons/mongo.png" class="w-12 mb-5" alt="Mongo">
+                    <h3 class="text-lg font-bold text-[#181818] mb-2">MongoDB</h3>
+                    <p class="text-[#757575] leading-relaxed text-sm">Schema design, aggregation pipelines, indexing strategies and Atlas cloud hosting.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════
+         RESUME  (its own proper section)
+    ════════════════════════════════════ -->
+    <section id="resume" class="py-24 px-6 bg-white">
+        <div class="max-w-[1140px] mx-auto">
+
+            <!-- Heading -->
+            <div class="text-center mb-16">
+                <span class="inline-block text-xs font-bold tracking-[0.18em] uppercase text-primary bg-[#EDE9FE] px-4 py-1 rounded-full mb-3">
+                    Resume
+                </span>
+                <h2 class="text-4xl font-extrabold text-black tracking-tight">A summary of my resume</h2>
+                <p class="text-[#757575] mt-3 text-lg max-w-xl mx-auto">A quick look at where I've studied and worked over the years.</p>
+            </div>
+
+            <!-- Two columns: Education | Experience -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
+
+                <!-- ── EDUCATION ── -->
+                <div class="bg-light-bg border border-[#DDD6FE] rounded-3xl p-8 md:p-10">
+
+                    <!-- Column header -->
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white text-base shrink-0">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-[#1a1a1a]">My Education</h3>
+                    </div>
+
+                    <div class="space-y-0">
+
+                        <!-- Item 1 -->
+                        <div class="relative pl-8 pb-10 border-l-2 border-[#DDD6FE]
+                                    before:content-[''] before:absolute before:left-[-9px] before:top-[4px]
+                                    before:w-4 before:h-4 before:bg-primary before:rounded-full
+                                    before:border-[3px] before:border-white before:shadow-[0_0_0_2px_#7C3AED]">
+                            <div class="bg-white border border-[#EDE9FE] rounded-2xl p-5 hover:shadow-[0_4px_20px_rgba(124,58,237,0.1)] hover:-translate-y-[2px] transition-all duration-300">
+                                <div class="flex items-start justify-between gap-2 mb-2">
+                                    <h4 class="text-base font-extrabold text-[#1a1a1a] leading-snug">Master in Computer Engineering</h4>
+                                    <span class="shrink-0 text-[0.65rem] font-bold bg-[#EDE9FE] text-primary px-2 py-1 rounded-lg whitespace-nowrap">2015 – 2017</span>
+                                </div>
+                                <p class="text-xs font-semibold text-primary mb-2 flex items-center gap-1">
+                                    <i class="fa-solid fa-building-columns"></i> Harvard University
+                                </p>
+                                <p class="text-sm text-[#757575] leading-relaxed">Specialized in distributed systems and full-stack web development with thesis on real-time data architectures.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative pl-8 pb-2 border-l-2 border-[#DDD6FE]
+                                    before:content-[''] before:absolute before:left-[-9px] before:top-[4px]
+                                    before:w-4 before:h-4 before:bg-primary before:rounded-full
+                                    before:border-[3px] before:border-white before:shadow-[0_0_0_2px_#7C3AED]">
+                            <div class="bg-white border border-[#EDE9FE] rounded-2xl p-5 hover:shadow-[0_4px_20px_rgba(124,58,237,0.1)] hover:-translate-y-[2px] transition-all duration-300">
+                                <div class="flex items-start justify-between gap-2 mb-2">
+                                    <h4 class="text-base font-extrabold text-[#1a1a1a] leading-snug">B.Sc. Computer Science</h4>
+                                    <span class="shrink-0 text-[0.65rem] font-bold bg-[#EDE9FE] text-primary px-2 py-1 rounded-lg whitespace-nowrap">2011 – 2015</span>
+                                </div>
+                                <p class="text-xs font-semibold text-primary mb-2 flex items-center gap-1">
+                                    <i class="fa-solid fa-building-columns"></i> MIT
+                                </p>
+                                <p class="text-sm text-[#757575] leading-relaxed">Dean's List every semester. Led the web development club and shipped 3 open-source projects.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ── EXPERIENCE ── -->
+                <div class="bg-light-bg border border-[#DDD6FE] rounded-3xl p-8 md:p-10">
+
+                    <!-- Column header -->
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white text-base shrink-0">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-xl font-extrabold text-[#1a1a1a]">My Experience</h3>
+                    </div>
+
+                    <div class="space-y-0">
+
+                        <!-- Item 1 -->
+                        <div class="relative pl-8 pb-10 border-l-2 border-[#DDD6FE]
+                                    before:content-[''] before:absolute before:left-[-9px] before:top-[4px]
+                                    before:w-4 before:h-4 before:bg-primary before:rounded-full
+                                    before:border-[3px] before:border-white before:shadow-[0_0_0_2px_#7C3AED]">
+                            <div class="bg-white border border-[#EDE9FE] rounded-2xl p-5 hover:shadow-[0_4px_20px_rgba(124,58,237,0.1)] hover:-translate-y-[2px] transition-all duration-300">
+                                <div class="flex items-start justify-between gap-2 mb-2">
+                                    <h4 class="text-base font-extrabold text-[#1a1a1a] leading-snug">Sr. Front End Developer</h4>
+                                    <span class="shrink-0 text-[0.65rem] font-bold bg-[#EDE9FE] text-primary px-2 py-1 rounded-lg whitespace-nowrap">2020 – Now</span>
+                                </div>
+                                <p class="text-xs font-semibold text-primary mb-2 flex items-center gap-1">
+                                    <i class="fa-solid fa-building"></i> Apple Inc
+                                </p>
+                                <p class="text-sm text-[#757575] leading-relaxed">Led UI architecture for internal tooling used by 20,000+ engineers globally. Drove 40% performance improvement.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative pl-8 pb-2 border-l-2 border-[#DDD6FE]
+                                    before:content-[''] before:absolute before:left-[-9px] before:top-[4px]
+                                    before:w-4 before:h-4 before:bg-primary before:rounded-full
+                                    before:border-[3px] before:border-white before:shadow-[0_0_0_2px_#7C3AED]">
+                            <div class="bg-white border border-[#EDE9FE] rounded-2xl p-5 hover:shadow-[0_4px_20px_rgba(124,58,237,0.1)] hover:-translate-y-[2px] transition-all duration-300">
+                                <div class="flex items-start justify-between gap-2 mb-2">
+                                    <h4 class="text-base font-extrabold text-[#1a1a1a] leading-snug">Jr. Front End Developer</h4>
+                                    <span class="shrink-0 text-[0.65rem] font-bold bg-[#EDE9FE] text-primary px-2 py-1 rounded-lg whitespace-nowrap">2018 – 2022</span>
+                                </div>
+                                <p class="text-xs font-semibold text-primary mb-2 flex items-center gap-1">
+                                    <i class="fa-solid fa-building"></i> Dribbble Inc
+                                </p>
+                                <p class="text-sm text-[#757575] leading-relaxed">Rebuilt the showcase platform in React, increasing page speed by 60% and boosting user engagement significantly.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Download button -->
+            <div class="text-center mt-14">
+                <button class="bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-lg font-bold text-lg inline-flex items-center gap-2 cursor-pointer transition-all duration-200 hover:-translate-y-[1px]">
+                    <i class="fa-solid fa-download"></i> Download Full CV
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════
+         FOOTER / CONTACT
+    ════════════════════════════════════ -->
+    <footer id="contact" class="bg-dark-bg py-24 px-6">
+        <div class="max-w-[1140px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+
+            <!-- Left -->
+            <div>
+                <h2 class="text-4xl font-extrabold text-white tracking-tight leading-tight mb-4">
+                    Let's build something<br>great together.
+                </h2>
+                <p class="text-[#9D8FC4] text-base leading-relaxed mb-8">
+                    Fill out the form or reach me between 9 AM–8 PM ET, Monday through Friday. I usually reply within 24 hours.
+                </p>
+                <div class="flex gap-3">
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-[#C4B5FD] text-sm no-underline hover:bg-primary hover:-translate-y-[2px] transition-all duration-200">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-[#C4B5FD] text-sm no-underline hover:bg-primary hover:-translate-y-[2px] transition-all duration-200">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-[#C4B5FD] text-sm no-underline hover:bg-primary hover:-translate-y-[2px] transition-all duration-200">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center text-[#C4B5FD] text-sm no-underline hover:bg-primary hover:-translate-y-[2px] transition-all duration-200">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: form -->
+            <div>
+                <h3 class="text-2xl font-bold text-white mb-6">Send a message</h3>
+                <form class="flex flex-col gap-4">
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        class="w-full px-5 py-4 rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-[#6b5e8a] text-base outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+                    >
+                    <input
+                        type="email"
+                        placeholder="Your email"
+                        class="w-full px-5 py-4 rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-[#6b5e8a] text-base outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200"
+                    >
+                    <textarea
+                        rows="5"
+                        placeholder="Tell me about your project..."
+                        class="w-full px-5 py-4 rounded-xl border border-white/10 bg-white/5 text-white placeholder:text-[#6b5e8a] text-base outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all duration-200 resize-y"
+                    ></textarea>
+                    <button
+                        type="submit"
+                        class="bg-primary hover:bg-primary-dark text-white px-10 py-4 rounded-lg font-bold text-base cursor-pointer transition-all duration-200 hover:-translate-y-[1px] self-start"
+                    >
+                        Send message →
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="max-w-[1140px] mx-auto mt-16 pt-8 border-t border-white/10 text-center text-sm text-[#6b5e8a]">
+            © 2025 Mary Hardy. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
