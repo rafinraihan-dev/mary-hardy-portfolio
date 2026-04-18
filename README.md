@@ -26,3 +26,5 @@ clone the repository then run:
 
 npm install
 npm run dev
+
+And the live link is - https://rafinraihan-dev.github.io/mary-hardy-portfolio
