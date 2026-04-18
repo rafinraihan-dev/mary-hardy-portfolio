@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Brand colors ── */
+  --color-primary: #7C3AED;
+  --color-primary-dark: #5B21B6;
+  --color-light-bg: #FAF8FF;
+  --color-dark-bg: #0f0a1e;
+  --color-hire-btn: #3B0764;
+  --color-hire-btn-hover: #7C3AED;
+
+  /* ── Font ── */
+  --font-open-sans: "Open Sans", sans-serif;
+}
